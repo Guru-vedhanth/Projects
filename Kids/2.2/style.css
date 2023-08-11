@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.kids{
+    width: 100%;
+    height: 800px;
+}
+.first{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.book{
+    width: 250px;
+    height: 250px;
+}
+.books,.games,.loves{
+    display:flex ;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.game,.love{
+    width: 300px;
+    height: 300px;
+}
+.content{
+    margin:90px 90px;
+}
+
+.buttons{
+    width:25px;
+    height: 20px;
+}
+.button{
+    background-color:rgb(97, 150, 255);
+}
+.cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bold{
+    font-weight: bold;
+}
+.pic{
+    background-image: url("https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/kw-background.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 620px;
+}
+#kids{
+    font-weight: 900;
+    font-size: 60px;
+    top: 15%;
+    position: relative;
+    left: 6%;
+    color: white;
+}
+#kidss{
+    top: 20%;
+    color: white;
+    position: relative;
+    left: 6%;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 0 60px ;
+  }
+  footer > div > img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  footer > p {
+    font-size: xx-large;
+  }
+  footer > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer > div > div {
+    text-align: end;
+  }
+  .name {
+    font-weight: bolder;
+    padding-bottom: 20px;
+  }
+  
+@media (max-width:400px){
+    body{
+        background-color:white;
+    }
+    .love,.game,.book{
+        width: 200px;
+        height: 200px;
+    }
+    .img1{
+        width: 150px;
+        height:100px;
+    }
+    .pic{
+    
+    background-size: 100% 100%;
+    height: 369px;
+    width: 376px;
+        
+    }
+    .kids{
+        font-size: 50px;
+    }
+    .details{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+}
