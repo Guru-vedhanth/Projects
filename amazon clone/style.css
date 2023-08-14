@@ -94,9 +94,9 @@ img[alt="laptop"]{
    
     background-color: white;
 }
-p{
+/* p{
     color:
-}
+} */
 .lines{
     font-size:30px;
     font-style: normal;
@@ -138,10 +138,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.link1{
-    /* padding-top:1000px ; */
-    
-}
+
 
 .cart{
     display: flex;
@@ -168,7 +165,7 @@ body{
     border-radius: 10px;
 }
 
-@media (max-width:400px){
+@media (200px < width <400px){
     .toogle,.loc,p,.flag,.search-icon,.lion{
         display: none;
         
@@ -189,3 +186,4 @@ body{
         background-color: white ;
 
     }
+}
