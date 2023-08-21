@@ -1,178 +1,126 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Rubik:wght@400;600&display=swap");
-
-* {
+*{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
-body {
-  font-family: "Rubik", sans-serif;
+.kids{
+  width: 100%;
+  height: 800px;
 }
-
-.books {
-  max-width: 200px;
-}
-
-.games,
-.crafts {
-  max-width: 300px;
-}
-
-.flex {
+.first{
+  margin-left: 20px;
+  margin-right: 20px;
   display: flex;
+  justify-content: space-between;
+}
+.book{
+  width: 250px;
+  height: 250px;
+}
+.books,.games,.loves{
+  display:flex ;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+.game,.love{
+  width: 300px;
+  height: 300px;
+}
+.content{
+  margin:90px 90px;
 }
 
-.section-container {
-  flex-direction: column;
-  padding: 5%;
+.buttons{
+  width:25px;
+  height: 20px;
+}
+.button{
+  background-color:rgb(97, 150, 255);
+}
+.cart{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.space-between {
+.bold{
+  font-weight: bold;
+}
+.pic{
+  background-image: url("https://github.com/Kalvium-Program/kidz-world-html-boilerplate/blob/main/assets/kw-background.png?raw=true");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 620px;
+}
+#kids{
+  font-weight: 900;
+  font-size: 60px;
+  top: 15%;
+  position: relative;
+  left: 6%;
+  color: white;
+}
+#kidss{
+  top: 20%;
+  color: white;
+  position: relative;
+  left: 6%;
+
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 0 60px ;
+}
+footer > div > img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+footer > p {
+  font-size: xx-large;
+}
+footer > div {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.space-evenly {
-  justify-content: space-evenly;
+footer > div > div {
+  text-align: end;
+}
+.name {
+  font-weight: bolder;
+  padding-bottom: 20px;
 }
 
-nav {
-  height: 50px;
-  width: 100%;
-}
-
-nav>div {
-  padding: 0% 5%;
-}
-
-nav img {
-  height: 30px;
-}
-
-#cart {
-  font-weight: bold;
-  align-items: center;
-}
-
-header {
-  height: 500px;
-  width: 100%;
-  background-image: url("./assets/kw-background.png");
+@media (max-width:400px){
+  body{
+      background-color:white;
+  }
+  .love,.game,.book{
+      width: 200px;
+      height: 200px;
+  }
+  .img1{
+      width: 150px;
+      height:100px;
+  }
+  .pic{
+  
   background-size: 100% 100%;
-  color: white;
-}
-
-.header-text {
-  flex-direction: column;
-  max-height: 100%;
-  max-width: 20%;
-  padding: 4% 5%;
-}
-
-header h1 {
-  font-size: 7vh;
-}
-
-header h5 {
-  font-size: 23px;
-  margin-top: 20px;
-}
-
-.section {
-  margin: 4% 0%;
-}
-
-.button {
-  cursor: pointer;
-  background-color: #6095ff;
-  color: white;
-  padding: 7px;
-  border-radius: 4px;
-}
-
-.buy img {
-  width: 20px;
-  padding-left: 5px;
-}
-
-.buy {
-  margin-top: 15px;
-  padding-bottom: 50px;
-}
-
-footer {
-  /* max-height: 300px; */
-  background-image: url("http://i1.faceprep.in/prograd-junior/footer-bg.png");
-  background-size: 100% 100%;
-  color: white;
-  padding: 0% 5%;
-}
-
-footer img {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-}
-
-#details {
-  flex-direction: column;
-  text-align: right;
-}
-
-h1,
-h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-}
-
-h4 {
-  color: grey;
-  font-weight: lighter;
-}
-
-h6 {
-  font-size: 17px;
-}
-
-.buy p {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-h3,
-h2 {
-  margin-bottom: 10px;
-}
-
-.container {
-  flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 600px) {
-  header {
-    height: 200px;
-    font-size: 15px;
-    text-align: start;
+  height: 369px;
+  width: 376px;
+      
   }
-
-  header h1 {
-    font-size: 4vh;
+  .kids{
+      font-size: 50px;
   }
+  .details{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
 
-  header h5 {
-    font-size: 15px;
-  }
-
-  .header-text {
-    padding: 0% 60% 5% 5%;
-  }
-
-  body {
-    text-align: center;
-  }
-
-  .container {
-    justify-content: center;
   }
 }
-

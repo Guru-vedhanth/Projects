@@ -33,4 +33,4 @@ function display(){
         console.log("Item name: "+x[i]+" Quantity: "+items[x[i]])
     }
     console.log("The total amount is "+Math.floor(total)+" $"+" cents "+(total-Math.floor(total)))
-}cs
+}
