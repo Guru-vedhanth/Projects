@@ -6,6 +6,8 @@ let count = 0
 
 let text=document.getElementsByClassName("bold")
 
+let url="https://wa.me/919487742918?text=Order details:"
+
 let button = document.getElementsByClassName("button")
 for (let i=0;i<button.length;i++){
     button[i].addEventListener("click",()=>get(i));
@@ -26,11 +28,15 @@ function get(i){
     }else{
         items[text[i].textContent] ++
     }
+    
+    
 }
 function display(){
     let x = Object.keys(items)
     for (let i = 0; i<x.length; i++){
         console.log("Item name: "+x[i]+" Quantity: "+items[x[i]])
+        url+=`${x[i]} ${items[x[i]]}`
     }
     console.log("The total amount is "+Math.floor(total)+" $"+" cents "+(total-Math.floor(total)))
 }
+
