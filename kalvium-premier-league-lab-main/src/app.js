@@ -126,14 +126,28 @@ function FilterByTeamxSortByNoOfAwards(team) {
 }
 
 //Challenge 1 - Sort players that have won _______ award _____ times and belong to _______ country in alphabetical order of their names
-function SortByNamexAwardxTimes(awardName, noOfTimes, country) {
-  return awardName
-    ? players.filter(
-        (player) =>
-          player.awards.filter((award) => award.name === awardName).length ===
-            noOfTimes && player.country === country
-      )
-    : [];
+function SortByNamexAwardxTimes(awardName, noOfTimes, country){
+  const x = players.filter((player)=>{
+    return player.awards.some((award)=>{
+      return award.name == awardName
+    })
+  })
+  const y = x.filter((player)=>{
+    return player.awards.length >= noOfTimes
+  })
+  const z = y.filter((player=>{
+    return player.country == country
+  }))
+
+  return z.sort((player1,player2)=>{
+    if (player1.name.toLowerCase() < player2.name.toLowerCase()){
+      return -1
+    }else if(player1.name.toLowerCase() > player2.name.toLowerCase()){
+      return 1
+    }else{
+      return 0
+    }
+  })
 }
 
 //Challenge 2 - Sort players that are older than _____ years in alphabetical order
