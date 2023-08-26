@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("assets/bg.png");
+    background-repeat: no-repeat;
+
+}
+
+.gameimg{
+    position:absolute;
+    top:23%;
+    left:15%;
+}
+
+.title{
+    position: absolute;
+    top:10%;
+    font-weight: bolder;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    left: 28%;
+    color:rgb(90, 37, 192);
+
+}
+
+.play-button{
+    position: absolute;
+    right: 43%;
+    bottom: 10%;
+    height: 50px;
+    width: 50px;
+}
+
+.gametext{
+    color: white;
+    position:absolute;
+    bottom: 11%;
+    right: 33%;
+}
+
+.score{
+    font-size: 100px;
+    color: white;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+
+}
+
+#text{
+    color: white;
+    font-size: 60px;
+}
+
+.output{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+.player1,.player2{
+    border: 2px solid yellow;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+}
+.player1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.result{
+    font-size: xx-large ;
+    color: white;
+}
+
+.playagain{
+    width: 180px;
+    height: 80px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+    background-color: yellow;
+    font-size: x-large;
+}
+.gameover{
+    visibility:hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#buttons{
+    display:flex;
+    justify-content: space-evenly;
+}

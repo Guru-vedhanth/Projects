@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+    </div>
+    <div class="score">
+        <div class="you">0</div>
+        <div class="dash">-</div>
+        <div class="com">0</div>
+    </div>
+    <div class="output">
+        
+        <div class="player1">
+            <p id="text">YOU</p>
+            <div class="prs">
+                <!-- <img class="paper-hand" src="assets/paper-hand.png" alt="">
+                <img class="rock-hand"src="assets/rock-hand.png" alt="">
+                <img class="scissors-hand"src="assets/scissors-hand.png" alt=""> -->
+            </div>
+            <div id="buttons">
+                <img id = "paper-button" src="assets/paper-logo.png" alt="button">
+                <img id = "rock-button" src="assets/rock-logo.png" alt="button">
+                <img id = "scissors-button" src="assets/scissors-logo.png" alt="button">
+            </div>
+        </div>
+        <div class="vs">
+            <img src="assets/vs.png" alt="">
+        </div>
+        <div class="player2">
+            <p id="text">COMPUTER</p>
+            <div class="prs1">
+                <!-- <img class="paper-hand" src="assets/paper-hand.png" alt="">
+                <img class="rock-hand"src="assets/rock-hand.png" alt="">
+                <img class="scissors-hand"src="assets/scissors-hand.png" alt=""> -->
+            </div>
+        </div>
+    </div>
+    <div class="gameover">
+        <div class="result">YOU WON</div>
+        <button class="playagain" onclick="run()">Play again</button>
+    </div>
+</body>
+<script src="game.js"></script>
+</html>
