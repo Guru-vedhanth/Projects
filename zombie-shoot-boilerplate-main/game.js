@@ -1,6 +1,6 @@
 const gamebody= document.getElementById("game-body")
 let shotgunsound= new Audio("./assets/shotgun.wav")
-let lives=3
+let lives=4
 let zombie
 
 
@@ -45,11 +45,14 @@ function destroyzombie(ghost){
     ghost.style.display = "none"
     generatezombies()
 }
+let width=100
 let time=60
 function escapezombie(zombie){
     // console.log(1)
     if(zombie.getBoundingClientRect().top<=0){
         lives--
+        width-=25
+        document.getElementById("lives").style.width = `${width}%`
         if(lives<=0){
             location.href="game-over.html"
         }else{
