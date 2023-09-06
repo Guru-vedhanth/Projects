@@ -1,0 +1,71 @@
+.heading{
+    color:white;
+    font-weight: 200; 
+    font-size: xx-large;
+}
+ul{
+    color: white;
+    font-size: x-large;
+}
+.intro{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 600px;
+    margin-left:-675px;
+
+}
+/* div{
+    height:500px;
+    width: 800px;
+    display: flex;
+    margin-top: 400px;
+    flex-direction: column;
+} */
+.list{
+    line-height: 40px;
+}
+.heading,.continue{
+    display: flex;
+    margin:auto;
+}
+button{
+    /* display: block;
+    text-align: center; */
+    height: 30px;
+    width:auto;
+    color:white;
+    font-size:large;
+    border-radius: 20px;
+    /* font-family:cursive; */
+    background-color:grey;
+}
+body{
+    background: url(assets/instructions.jpg) no-repeat left center fixed;
+    background-size: cover ;
+    
+}
+@media (max-width:800px){
+    body{
+        background-position-x: -650px;
+    }
+    .intro{
+        margin-left:50px;
+    }
+}
+
+@media (max-width:500px){
+    body{
+        background-position-x:-650px;
+        
+    } 
+    .heading{
+        font-size: larger;
+    }
+    .intro{
+        margin-top:400px;
+    }
+    
+}
+

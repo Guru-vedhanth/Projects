@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* cursor:url(assets/hammer.png),auto; */
+}
+body{
+    background-color: #866363;
+    /* cursor: url(assets/hammer.png),auto; */
+    background-image: url(assets/back-3.jpg);
+    
+}
+#graves{
+    height: 400px;
+    width: 400px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 80px;
+}
+
+#game{
+    height: 100ch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hole{
+    
+    background-color:white;
+    border-radius: 50%;
+}
+
+.level{
+    display: flex;
+    justify-content: center;
+    column-gap: 60px;
+}
+
+
+
+.hammerlogo{
+    display: flex;
+    margin: 0 auto;
+    height: 150px;
+    width:150px;
+}
+
+p{
+    color: white;
+    font-size: xx-large;
+}
+.da{
+    height:70px;
+    width: 70px;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+@media (max-width:500px){
+    body{
+        background-image: url(assets/back-3.1.jpg);
+    }
+    #graves{
+        display:grid;
+        height:400px;
+        width:400px;
+    }
+    p{
+        font-size: medium;
+    }
+    .da{
+        position:relative;
+        top: 47%;
+        left: 50%;
+        transform: translate(-50% ,-50%);
+        height:50px;
+        width:50px
+    }
+}
+
+
