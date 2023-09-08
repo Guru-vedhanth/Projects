@@ -1,18 +1,37 @@
 const holes=document.querySelectorAll(".hole")
 const graves=document.querySelector("#graves")
+const nickname =localStorage.getItem("nickname")
+const points=document.querySelector(".score-board")
+
+
+// DECLARING THE VALUE
+
+let score=0
 let count
 let position 
 let nums
-let speed1
-let speed2
-let speed3
+let stage
+stage=sessionStorage.getItem("level")
+// console.log(stage)
+let time=stage
+let values
+let values2
+let place
+
+
 
 generatemembers()
+
+// GENERATING RANDOM NUMBERS
 
 function generaterandomnumbers(){
     position=Math.floor(Math.random()*9)
     nums=Math.floor(Math.random()*2)
 }
+
+
+
+// GENERATING THE DEVIL AND ANGEL
 
 
 function generatemembers(){
@@ -21,6 +40,7 @@ function generatemembers(){
         `<img src="assets/devil.png" alt="" class="da">`,`<img src="assets/angel.png" alt="" class="da">`
     ]
     holes[position].innerHTML=arr[nums]
+    place=holes[position]
     if (nums==0){
         count=0
     }else{
@@ -29,40 +49,75 @@ function generatemembers(){
 }
 
 
-
+// ADDING FUNCTIONS AFTER CLICKING DEVIL OR ANGEL 
 
 graves.addEventListener('click',function(e){
-    let value=e.target
-    if(value!=""){
-        destroydevilorangel(count,value)
-    }
+    values=e.target.src
+    values2=e.target
+    if(values!= undefined){
+        destroy(count,values2)}
 })
 
+// DESTROYING THE DEVIL AFTER CLICKING IF ANGEL CLICKED EXITS THE GAME 
 
 
-function destroydevilorangel(count,value){
+function destroy(count,values2){
     if (count==0){
-        value.style.display = "none"
+        values2.style.display = "none"
+        time=stage
+        score++
+        points.textContent=score
         generatemembers()
-    }else{
-        location.href="gameover.html"
+    }
+    else if(count==1){
+        values2.style.display="none"
+        gameover()
     }
 }
 
-speed1=1
-spped2=2
-spped3=3
 
+// ADDING TIMER TO THE GAME USING SETINTERVAL 
 
-
-time=speed3
 
 setInterval(timer,1000)
 
-
-
 function timer(){
-    if(time<0){
-        location.href="gameover.html"
+    // TO CHECK WHETHER THE IMAGE IS DEVIL OR ANGEL
+    if(count==0){
+        time--
+        if(time == 0){
+            gameover()
+        }
+    }
+    else if(count ==1){
+        time--
+        if(time==1){
+            holes[position].innerHTML=""
+            time=stage
+            generatemembers()
+        }
+    }
+    else if(values == undefined){
+        time--
+        if(time==0){
+            alert("Choose the correct option")
+        }
     }
 }
+
+
+// DIRECTING TO THE GAMEOVER PAGE
+
+function gameover(){
+    location.href="gameover.html"
+    localStorage.setItem(nickname,score)
+    // localStorage.clear();
+}
+
+
+
+
+
+
+
+

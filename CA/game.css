@@ -5,14 +5,13 @@
     /* cursor:url(assets/hammer.png),auto; */
 }
 body{
-    background-color: #866363;
     /* cursor: url(assets/hammer.png),auto; */
     background-image: url(assets/back-3.jpg);
     
 }
 #graves{
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
     display: grid;
     margin: auto;
     grid-template-columns: repeat(3,1fr);
@@ -50,7 +49,10 @@ body{
 
 p{
     color: white;
-    font-size: xx-large;
+    font-size: 80px;
+    position: absolute;
+    top: 5%;
+    right: 0%;
 }
 .da{
     height:70px;
@@ -60,17 +62,18 @@ p{
     left: 50%;
     transform: translate(-50% ,-50%);
 }
+
 @media (max-width:500px){
     body{
         background-image: url(assets/back-3.1.jpg);
     }
     #graves{
         display:grid;
-        height:400px;
-        width:400px;
+        height:350px;
+        width:350px;
     }
     p{
-        font-size: medium;
+        font-size:60px;
     }
     .da{
         position:relative;

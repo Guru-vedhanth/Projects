@@ -13,24 +13,23 @@ let secondname
 submitButton.addEventListener('click', function() {
     name=Username.value
     secondname=Nickname.value
-// // Storing the username and nickname
-//     localStorage.setItem('username', name);
-//     localStorage.setItem('nickname', secondname);
 
-// // Retrieving the username and nickname
-//     const storedUsername = localStorage.getItem('username');
-//     const storedNickname = localStorage.getItem('nickname');
+
+// Storing the username and nickname
+    localStorage.setItem('username', name);
+    localStorage.setItem('nickname', secondname);
+
 
 // Moving to the next interface
     if ((name!="") && (secondname!="")){
-        location.href="game.html"
+        location.href="level.html"
     }else{
         alert("Type the names...")
     }
     
 })
 
-
+// DIRECTING TO INSTRUCTION PAGE
 
 information.addEventListener('click',function(){
     location.href="instructions.html"

@@ -8,6 +8,7 @@ ul{
     font-size: x-large;
 }
 .intro{
+    
     display: flex;
     margin: auto;
     align-items: center;
