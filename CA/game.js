@@ -111,7 +111,6 @@ function timer(){
 function gameover(){
     location.href="gameover.html"
     localStorage.setItem(nickname,score)
-    localStorage.clear();
 }
 
 
