@@ -17,19 +17,14 @@ ul{
     margin-left:-675px;
 
 }
-/* div{
-    height:500px;
-    width: 800px;
-    display: flex;
-    margin-top: 400px;
-    flex-direction: column;
-} */
+
 .list{
     line-height: 40px;
 }
 .heading,.continue{
     display: flex;
     margin:auto;
+    cursor: pointer;
 }
 button{
     /* display: block;

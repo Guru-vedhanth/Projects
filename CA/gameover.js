@@ -51,9 +51,9 @@ for(let i=0;i<length;i++){
 
 
 
-topscore=Object.entries(topscore).sort((a,b)=>{
-    b[1]-a[1]
-})
+topscore=Object.entries(topscore).sort((a,b)=>b[1]-a[1])
+
+console.log(topscore)
 for(var i=0; i<topscore.length;i++){
     table.innerHTML+=` <tr>
     <th>${i+1}</th>
