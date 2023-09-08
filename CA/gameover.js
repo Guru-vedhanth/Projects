@@ -4,6 +4,7 @@ const nickname=localStorage.getItem("nickname")
 const leaderboard=document.querySelector(".leader-board")
 const lastpage=document.querySelector(".lastpage")
 const popup=document.querySelector(".popup")
+const command=document.querySelector(".commands")
 let length
 const table=document.querySelector("table")
 const close=document.querySelector(".close")
@@ -14,6 +15,19 @@ retry.addEventListener('click',function(){
 const score= localStorage.getItem(nickname)
 
 scoreboard.textContent=score
+
+if(score==0){
+    command.innerText+="Better luck time"
+}else if(score<5){
+    command.innerText+="Best try"
+}else if(score<10){
+    command.innerText+="Keep Rocking"
+}else if(score<15){
+    command.innerText+="Great job"
+}else{
+    command.innerText+="Awesome"
+}
+
 
 leaderboard.addEventListener('click',function(){
     popup.style.display="flex"
@@ -47,3 +61,6 @@ for(var i=0; i<topscore.length;i++){
     <td>${topscore[i][1]}</td>
 </tr>`
 }
+
+
+

@@ -52,6 +52,12 @@ body{
     color: white;
     font-family: 'Poppins', sans-serif;
 }
+
+.commands{
+    color:white;
+    font-size: xx-large;
+    font-weight: 100;
+}
 table {
     
     width:300px;
@@ -104,6 +110,7 @@ th {
     .lastpage{
         padding-top: 200px;
         padding-left: 0px;
+        row-gap: 30px;
     }
     p{
         font-size: large;
