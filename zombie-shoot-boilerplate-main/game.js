@@ -6,7 +6,6 @@ let zombie
 
 
 gamebody.onclick = ()=>{
-    // shotgunsound.pause()
     shotgunsound.currentTime = 0
     shotgunsound.play()
 }
@@ -30,7 +29,6 @@ function generatezombies(){
     zombie.style.transform=`translateX(${viewwidth}vw)`
     zombie.onclick=()=>{
         destroyzombie(zombie)
-
     }
     zombieid++
 }
@@ -38,7 +36,6 @@ generatezombies()
 
 function generateuniquenumbers(min,max){
     return Math.floor(Math.random()*(max-min))+min
-
 }
 
 function destroyzombie(ghost){
@@ -48,7 +45,6 @@ function destroyzombie(ghost){
 let width=100
 let time=60
 function escapezombie(zombie){
-    // console.log(1)
     if(zombie.getBoundingClientRect().top<=0){
         lives--
         width-=25
