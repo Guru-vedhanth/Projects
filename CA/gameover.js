@@ -1,3 +1,6 @@
+// ACCESSING VALUES
+
+
 const retry=document.querySelector(".playagain")
 const scoreboard= document.querySelector(".score-board")
 const nickname=localStorage.getItem("nickname")
@@ -12,9 +15,15 @@ retry.addEventListener('click',function(){
     location.href="level.html"
 })
 
-const score= localStorage.getItem(nickname)
 
+// STORING THE VALUE IN LOCAL STORAGE
+
+
+const score= localStorage.getItem(nickname)
 scoreboard.textContent=score
+
+
+// DISPLAYING COMMANDS ACCORDING TO THE SCORE
 
 if(score==0){
     command.innerText+="Better luck time"
@@ -37,6 +46,8 @@ leaderboard.addEventListener('click',function(){
 close.addEventListener('click',function(){
     location.href="gameover.html"
 })
+
+
 length=localStorage.length
 
 let topscore={}
@@ -49,9 +60,9 @@ for(let i=0;i<length;i++){
     }
 }
 
+// DISPLAYING THE LEADER BOARD
 
-
-topscore=Object.entries(topscore).sort((a,b)=>b[1]-a[1])
+topscore=Object.entries(topscore).sort((a,b)=>b[1]-a[1]) 
 
 console.log(topscore)
 for(var i=0; i<topscore.length;i++){
