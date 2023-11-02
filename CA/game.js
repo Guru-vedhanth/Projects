@@ -17,7 +17,9 @@ let time=stage
 let values
 let values2
 let place
-
+let arr=[
+    `<img src="assets/devil.png" alt="" class="da">`,`<img src="assets/angel.png" alt="" class="da">`
+]
 
 
 generatemembers()
@@ -36,9 +38,7 @@ function generaterandomnumbers(){
 
 function generatemembers(){
     generaterandomnumbers()
-    arr=[
-        `<img src="assets/devil.png" alt="" class="da">`,`<img src="assets/angel.png" alt="" class="da">`
-    ]
+    
     holes[position].innerHTML=arr[nums]
     place=holes[position]
     if (nums==0){
@@ -57,6 +57,8 @@ graves.addEventListener('click',function(e){
     if(values!= undefined){
         destroy(count,values2)}
 })
+
+
 
 // DESTROYING THE DEVIL AFTER CLICKING IF ANGEL CLICKED EXITS THE GAME 
 
