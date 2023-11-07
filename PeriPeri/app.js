@@ -39,7 +39,7 @@ function search(){
         console.log(data)
         data.meals.forEach((item) => {
             document.getElementById("yourchoice").innerHTML+=`<div class="meals"><img class="dish" id="searchmeal" src="${item.strMealThumb}">
-            <p class="food-name" onclick="details()">${item.strMeal}</p></div>`
+            <p class="food-name">${item.strMeal}</p></div>`
         })
     })
 
