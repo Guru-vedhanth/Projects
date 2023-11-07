@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo">
+                <p class="peri">Peri Peri</h1>        
+            </div>
+            <p id="text-2"> Website aims to inspire, educate, and assist individuals in their culinary journeys by providing a wide array of recipes,cooking advice, and resources to make the cooking experience enjoyable and rewarding.</p>
+            <div class="search">
+                <input type="text" class="searchbar"placeholder="Search"  id="category">
+                <img src="/assets/icon _search.png" alt="" class="icon" onclick="search()">
+            </div>
+        </div>
+        
+        <div class="second-div">
+            <p class="inside">Random Meal:</p>
+            <div class="random">
+                <img src="" alt="" class="dish" id="randommeal"onclick="details()">
+                <p class="food-name" id="randommealname" ></p>
+            </div>
+        </div>
+
+
+        <div class="third-div" id="third-div">
+            <p class="inside">Your choice:</p>
+            <div class="yours" id="yourchoice">
+            </div>
+        </div>
+        <dialog id="modal">
+            <table id="modaltable">
+                <tr>
+                    <th>Ingriedients</th>
+                    <th>Quantity</th>
+                </tr>
+            </table>
+            <button onclick="detailsclose()" id="button">Close</button>
+        </dialog>
+        
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

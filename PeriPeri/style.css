@@ -1,0 +1,162 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    background-color:#DDE6ED;
+}
+
+/* Creating the div for images */
+
+
+.dish{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: bisque;
+}
+
+/* Header which contains the logo, description and search bar*/
+
+
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width:100%;
+}
+
+/* Which contains the searched category dishes */
+
+
+/* .yours{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+} */
+
+.random,.yours{
+    background-color:#526D82;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Initializing all the text content in particular model */
+
+
+p{
+    color:white;
+    font-size: xx-large;
+    font-weight: 200;
+}
+
+/* Designing the search bar */
+
+
+.searchbar{
+    background-color: #27374D;
+    color: white;
+    border-radius: 20px;
+    height:40px;
+    width:300px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 200;
+    
+}
+
+/* Making the inner text of the search bar as white */
+
+
+::placeholder{
+    color: white;
+}
+
+.main{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    height: 100%;
+}
+
+#text-2{
+    width:60%;
+    height: auto;
+    color: #526D82;
+
+}
+
+.peri{
+    background-color: #27374D;
+    width:2400px;
+    font-size:60px;
+    color:white;
+    text-align: center;
+}
+
+/* Creating the particular design for the divs which shows information about the dishes  */
+
+
+.second-div,.third-div{
+    border-radius: 10px;
+    margin-top: 1rem;
+    background-color: #526D82;
+    padding:10px 10px;
+    margin-left: 10%;
+    height:100%;
+    width: 80%;
+    display: flex;
+    row-gap:20px;
+    flex-direction: column;
+}
+
+/* Assigning the background of the heading */
+
+
+.inside{
+    background-color: #526D82;
+}
+
+
+
+.food-name{
+    background-color: #526D82;
+    text-decoration: underline;
+}
+
+.icon{
+    height: 30px;
+    width: 25px;
+}
+
+#yourchoice{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 30px;
+}
+
+.meals{
+    width:200px;
+    height: fit-content;
+}
+
+dialog{
+
+    background-color:#D9D9D9;
+}
+
+th{
+    font-size: x-large;
+}
+
+td{
+    font-size: larger ;
+}
+
+#button{
+    background-color:brown ;
+}
+
