@@ -80,7 +80,7 @@ p{
     height: 100%;
 }
 
-#text-2{
+#text-2,#text-3{
     width:60%;
     height: auto;
     color: #526D82;
@@ -160,3 +160,15 @@ td{
     background-color:brown ;
 }
 
+@media (width<500px){
+    #text-2{
+        display: none;
+    }
+    #text-3{
+        display: contents;
+    }
+    .header,.main{
+        display: flex;
+        row-gap: 20px;
+    }
+}
