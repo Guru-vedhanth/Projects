@@ -127,7 +127,7 @@ img[alt="laptop"]{
     background-color: transparent;
 }
 body{
-    background-image: url(https://github.com/Guru-vedhanth/amazon-clone-boilerplate/blob/main/assets/background%20picture.png?raw=true);
+    background-image: url(./assets/background\ picture.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 120px;
