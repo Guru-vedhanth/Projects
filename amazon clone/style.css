@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* background-color: rgb(192, 19, 19); */
 }
 
 
@@ -18,9 +17,12 @@
     flex-direction: row;
     align-items: center;
     background-color:#121921;
+    flex-wrap: wrap;
+    width: 100%;
+
 }
 #searchbox{
-    width: 1000px;
+    width: 150px;
     height: 50px;
 }
 img[alt="search icon"]{
@@ -42,6 +44,7 @@ p{
     justify-content: space-between;
     align-items: center;
     background-color: #243040;
+    flex-wrap: wrap;
 }
 
 .left-arrow{
@@ -51,6 +54,7 @@ p{
     display: flex;
     justify-content: space-around;
     column-gap:20px;
+    flex-wrap: wrap;
 
 }
 .box4{
@@ -165,7 +169,24 @@ body{
     border-radius: 10px;
 }
 
-@media (200px < width <500px){
+
+@media (800px< width <1080px){
+    .lion,.para2{
+        display: none;
+    }
+}
+
+
+@media (500px < width <800px){
+    .search-icon,.loc,.lion,.para2{
+        display: none;
+    }
+}
+
+
+
+
+@media (390px< width <500px){
     .toogle,.loc,p,.flag,.search-icon,.lion{
         display: none;
         
@@ -186,4 +207,54 @@ body{
         background-color: white ;
 
     }
+    .images,.images2{
+        width: 100px;
+        height: 100px;
+    }
+    .images3{
+        width: 100%;
+        height:200px;
+    }
+    .image4{
+        display: none;
+    }
+}
+
+
+@media (200px < width <400px){
+    .toogle,.loc,p,.flag,.search-icon,.lion{
+        display: none;
+        
+    }
+    .prime{
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .arrow{
+        display: none;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .body{
+        background-color: white ;
+
+    }
+    .images3{
+        width: 80%;
+        height: 150px;
+    }
+    .images,.images2{
+        width: 80px;
+        height: 80px;
+    }
+    .image4{
+        display: none;
+    }
+    .box3,.box4{
+        width: 100%;
+    }
+
 }
