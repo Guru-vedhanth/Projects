@@ -95,7 +95,7 @@
     padding-bottom: 20px;
   }
   
-  @media (max-width:400px){
+  @media (max-width:500px){
     body{
         background-color:white;
     }
@@ -111,7 +111,7 @@
     
     background-size: 100% 100%;
     height: 369px;
-    width: 376px;
+    width: 100%;
         
     }
     #kids{
