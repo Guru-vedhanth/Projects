@@ -165,7 +165,7 @@ body{
     border-radius: 10px;
 }
 
-@media (200px < width <400px){
+@media (200px < width <500px){
     .toogle,.loc,p,.flag,.search-icon,.lion{
         display: none;
         
